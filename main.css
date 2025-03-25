@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.newChatButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    width: 200px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(44, 44, 44);
+
+    transition: background-color 0.2s;
+}
+
+.newChatButton:hover {
+    background-color: rgba(72, 72, 72, 0.082);
+}
+
+.chatIcon {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.logo-icon {
+    width: 300px;
+}
+
+.message-section {
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 1000px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.type-div {
+    height: 60px;
+    width: 100%;
+    display: flex;  
+
+    position: absolute;
+    bottom: 80px;
+}
+.type-box {
+    height: 100%;
+    width: 100%;
+
+    margin: 0 50px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-width: 1px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.welcome-message p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.welcome-message {
+    width: 100%;
+}
+
+.div-features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.div-features button {
+    padding: 10px 20px 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0px 10px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+
+    background-color: rgba(0,0,0,0);
+    box-shadow: 0 0 2px black;
+    transition: padding 0.15s;
+}
+
+.div-features button:hover {
+    padding: 20px 30px 20px 30px;
+}
+
+@media (min-width: 500px) {
+    .message-section {
+        width: 500px;
+    }
+}
+@media (min-width: 800px) {
+    .message-section {
+        width: 800px;
+    } 
+}
+@media (min-width: 1000px){
+    .message-section {
+        width: 1000px;
+    } 
+}
